@@ -73,7 +73,7 @@ function QuestionForm(props) {
           +
         </button>
       </div>
-      <button disabled={submitButtonDisabled} type="submit">
+      <button className={styles.createBtn} disabled={submitButtonDisabled} type="submit">
         {btnText}
       </button>
     </form>

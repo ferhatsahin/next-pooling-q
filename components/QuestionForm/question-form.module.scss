@@ -45,14 +45,11 @@
       margin-top: 10px;
       font-size: 20px;
       height: 56px;
-      button{
-        &:disabled{
-          background: darken(#fff,20);
-          color: lighten(#000,10);
-          cursor: not-allowed;
-        }
-      }
     }
-
+  }
+  button:disabled{
+    background: darken(#fff,20);
+    color: lighten(#000,10);
+    cursor: not-allowed;
   }
 }
