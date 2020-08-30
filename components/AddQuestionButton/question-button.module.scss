@@ -1,0 +1,23 @@
+@import '../../styles/responsive-helpers.scss';
+
+.addButtonWrapper{
+  display: flex;
+  justify-content: flex-end;
+  @include mobile-only{
+    flex-direction: column;
+  }
+  button{
+    margin: 10px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}

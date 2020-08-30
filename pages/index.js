@@ -1,15 +1,12 @@
-import Link from 'next/link'
-
 import Layout from "../components/Layout";
 import QuestionList from "../components/QuestionList";
+import AddQuestionButton from '../components/AddQuestionButton'
 import { fetcher } from '../helpers'
 
 export default function Home({questions}) {
   return (
     <Layout home>
-      <Link href="/create-question">
-        <button> Add Question</button>
-      </Link>
+      <AddQuestionButton/>
       <QuestionList questions={questions} />
     </Layout>
   );
