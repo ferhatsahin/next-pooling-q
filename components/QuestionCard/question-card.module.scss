@@ -1,0 +1,51 @@
+@import '../../styles/responsive-helpers.scss';
+
+.boxContainer{
+  display: flex;
+  flex-direction: column;
+  $cardMargin: 10;
+  padding: 20px;
+  box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+  border-radius: 10px;
+  margin: #{$cardMargin}px;
+  flex: 0 0 calc((100% / 3) - #{$cardMargin*2}px);
+  @include tablet-landscape-and-below{
+    flex: 0 0 calc((100% / 2) - #{$cardMargin*2}px);;
+  }
+  @include mobile-only{
+    flex: 0 0 calc(100% - #{$cardMargin*2}px)
+  }
+  &:hover{
+    box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+  }
+  h1{
+    color: lighten(#000,20);
+    font-weight: 600;
+    flex: 1;
+  }
+  h2{
+    font-weight: normal;
+    color: lighten(#000,40);
+    display: flex;
+    align-items: center;
+    span{
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 5px;
+      color: #fff;
+      font-size: 18px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: lighten(#000,20);
+    }
+  }
+  h3{
+    font-weight: normal;
+    color: lighten(#000,60);
+  }
+  
+}

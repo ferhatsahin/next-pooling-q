@@ -1,5 +1,17 @@
+import Link from 'next/link'
+
+import Layout from "../components/Layout";
+import QuestionList from "../components/QuestionList";
+
+import { mockedData } from "../mocked";
+
 export default function Home() {
   return (
-    <h1>Hello Next</h1>
-  )
+    <Layout home>
+      <Link href="/create-question">
+        <button> Add Question</button>
+      </Link>
+      <QuestionList questions={mockedData} />
+    </Layout>
+  );
 }
