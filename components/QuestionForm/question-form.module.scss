@@ -1,0 +1,56 @@
+@import '../../styles/responsive-helpers.scss';
+
+.form{
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  flex: 1 0 50%;
+  @include tablet-portrait-and-below{
+    margin-bottom: 20px;
+    flex-basis: 100%;
+  }
+
+  .formError{
+    color: red;
+  }
+
+  .formItem{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    &.formColumn{
+      flex-direction: column;
+    }
+
+    button{
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 10px;
+      width: 46px;
+      height: 46px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 28px;
+      line-height: 1;
+      margin-left: 10px;
+      border-radius: 50%;
+      &:hover{
+        cursor: pointer;
+      }
+      &:disabled{
+        background: darken(#fff,20);
+        color: lighten(#000,10);
+        cursor: not-allowed;
+      }
+    }
+
+    .createBtn{
+      margin-top: 10px;
+      font-size: 20px;
+      height: 56px;
+    }
+
+  }
+}

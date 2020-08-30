@@ -1,0 +1,27 @@
+@import '../../styles/responsive-helpers.scss';
+
+.createQuestionContainer{
+  display: flex;
+  width: 100%;
+  
+  @include tablet-portrait-and-below{
+    flex-direction: column;
+  }
+
+  input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 18px;
+  }
+
+  label{
+    margin: 8px 0;
+    font-size: 20px;
+  }
+  
+}
