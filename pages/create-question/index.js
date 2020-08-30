@@ -1,5 +1,5 @@
-import Layout from '../components/Layout'
-import styles from './create-question.module'
+import Layout from '../../components/Layout'
+import styles from './create-question.module.scss'
 
 export default function CreateQuestion() {
   return (

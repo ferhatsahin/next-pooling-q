@@ -9,7 +9,7 @@ function QuestionCard({ url, published_at, question, choices }) {
       <div className={styles.boxContainer}>
         <h1>{question}</h1>
         <div className={styles.cardFooter}>
-        <h3>Posted: {published_at}</h3>
+        <h3>Posted: {formattedDate}</h3>
         <h2>Number of choices: <span>{choices.length}</span></h2>
         </div>
       </div>
