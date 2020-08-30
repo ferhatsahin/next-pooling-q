@@ -8,12 +8,15 @@ First, clone the repo:
 git clone git@github.com:ferhatsahin/next-code-challenge.git
 ```
 
-Then install the dependicies and run the development server.
+Then locate to the project folder & install the dependicies and then the development server.
 
 ```bash
+cd next-code-challange
+
 # for yarn users
 yarn install
 yarn dev
+
 # for npm users
 npm install
 npm run dev
