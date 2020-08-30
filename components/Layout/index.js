@@ -2,6 +2,7 @@ import Header from "../Header";
 import Head from "next/head";
 
 import GoBack from "../GoBack";
+
 import styles from "./layout.module.scss";
 
 function Layout({ children, home }) {

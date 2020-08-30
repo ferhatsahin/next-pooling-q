@@ -1,0 +1,29 @@
+@import '../../styles/responsive-helpers.scss';
+
+.detailWrapper{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  @include tablet-portrait-and-below{
+    width: 100%;
+  }
+  h3{
+    color: lighten(#000,20);
+    font-weight: 600;
+  }
+  .option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: darken(#fff,5);
+    border-radius: 20px;
+    margin-bottom: 10px;
+    button:disabled{
+      background: darken(#fff,20);
+      color: lighten(#000,10);
+      cursor: not-allowed;
+    }
+  }
+
+}
