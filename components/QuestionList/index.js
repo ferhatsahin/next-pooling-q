@@ -1,12 +1,15 @@
-import QuestionCard from '../QuestionCard'
-import styles from './question-list.module.scss'
+import QuestionCard from "../QuestionCard";
 
-function QuestionList({questions}){
+import styles from "./question-list.module.scss";
+
+function QuestionList({ questions }) {
   return (
     <div className={styles.qlistWrapper}>
-      {questions.map(question => <QuestionCard key={question.url} {...question} />)}
+      {questions.map(question => (
+        <QuestionCard key={question.url} {...question} />
+      ))}
     </div>
-  )
+  );
 }
 
-export default QuestionList
+export default QuestionList;
