@@ -11,7 +11,7 @@ git clone git@github.com:ferhatsahin/next-code-challenge.git
 Then locate to the project folder & install the dependicies and then the development server.
 
 ```bash
-cd next-code-challenge
+cd next-pooling-q
 
 # for yarn users
 yarn install
